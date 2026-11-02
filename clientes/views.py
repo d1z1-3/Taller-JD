@@ -19,7 +19,6 @@ def crear_cliente(request):
         form = ClienteForm()
     return render(request, 'clientes/crear_cliente.html', {'form': form})
 
-from .forms import ClienteForm, VehiculoForm # Asegúrate de importar VehiculoForm
 
 @login_required
 def lista_vehiculos(request):
