@@ -1,0 +1,11 @@
+{% extends 'seguridad/base.html' %}
+
+{% block content %}
+    <h2>Bienvenido al sistema, {{ user.username }}</h2>
+    <p>Tu rol actual es: <b>{{ user.get_rol_display }}</b></p>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h3>Accesos Rápidos</h3>
+        <p>Aquí construiremos los botones para ir a Clientes, Órdenes de Trabajo, Inventario, etc.</p>
+    </div>
+{% endblock %}

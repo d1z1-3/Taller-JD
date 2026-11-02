@@ -135,3 +135,7 @@ MAILERS = {
     },
 }
 AUTH_USER_MODEL = 'seguridad.CustomUser'
+
+# Redirecciones de Login
+LOGIN_REDIRECT_URL = '/dashboard/' 
+LOGOUT_REDIRECT_URL = '/login/'
